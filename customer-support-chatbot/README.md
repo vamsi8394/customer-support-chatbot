@@ -1,27 +1,45 @@
 # 🤖 Customer Support Chatbot
 
-A FastAPI-based chatbot using GPT and LangChain.
+A FastAPI-based conversational chatbot built using LangChain and GPT-4o for intelligent, real-time support interactions.
+
+---
 
 ## 💡 Features
-- Conversational memory with LangChain
-- FastAPI backend
-- GPT-4o via OpenAI
 
-## 🚀 Usage
+- ✅ Natural language understanding powered by OpenAI GPT-4o  
+- 🧠 Contextual memory with LangChain’s `ConversationBufferMemory`  
+- ⚡ FastAPI backend for quick deployment and easy API access  
+- 🔐 Environment variable support with `.env` and `python-dotenv`
 
-Run the app:
-    uvicorn app.main:app --reload
+---
 
-Send a POST request to `/chat`:
-    {
-      "message": "Hi, I need help"
-    }
+## 🛠️ Technologies Used
 
-## 🛠 Requirements
+- **Python 3.10+**
+- **FastAPI** — for API routing
+- **LangChain** — to manage conversation logic
+- **OpenAI** — GPT-4o model
+- **Uvicorn** — ASGI server
+- **python-dotenv** — for secure API key management
 
-Install dependencies:
-    pip install -r requirements.txt
+---
 
-## 📄 License
+## 🚀 Getting Started
 
-MIT
+### 🔧 Installation
+
+```bash
+# 1. Clone the repo
+git clone https://github.com/vamsi8394/customer-support-chatbot.git
+cd customer-support-chatbot
+
+# 2. Create virtual environment
+python -m venv venv
+source venv/bin/activate  # or venv\Scripts\activate on Windows
+
+# 3. Install dependencies
+pip install -r requirements.txt
+
+# 4. Add your OpenAI API key
+echo "OPENAI_API_KEY=your-key-here" > .env
+
